@@ -18,5 +18,6 @@ function fc_calcul() {
     affichage.innerHTML =
         `<div class="alert alert-success" role ="alert">${prixtotal} €</div>`;
 }
+
 /* ---------------------------------- Appel --------------------------------- */
 Boutoncalc.addEventListener("click", fc_calcul, false);
