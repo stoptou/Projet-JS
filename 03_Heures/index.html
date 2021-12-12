@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Heures</title>
+    <link rel="stylesheet" href="/Impots/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mx-auto mt-5 text-center">
+                <div class="mb-6">
+                    <label for="valeur-saisie" class="form-label">Entrez une heure :</label>
+                    <input type="number" class="form-control" id="valeur-heure" aria-describedby="valeur-heure">
+                    <label for="valeur-saisie" class="form-label">Entrez les minutes :</label>
+                    <input type="number" class="form-control" id="valeur-minute" aria-describedby="valeur-minute">
+                    <label for="valeur-saisie" class="form-label">Entrez les secondes :</label>
+                    <input type="number" class="form-control" id="valeur-seconde" aria-describedby="valeur-seconde">
+                    <div class="form-text">Dans une seconde il sera...</div>
+                    <button type="submit" id="bouton" class="btn btn-primary mt-5">Afficher</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 mx-auto mt-5 text-center">
+                    <div id="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Impots/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    
 </body>
 </html>
