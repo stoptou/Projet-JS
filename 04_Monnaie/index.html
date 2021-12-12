@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- ----------------------------------------------------------------------- -->
+<!--                       Exercice Caisse Calcul Monnaie                    -->
+<!-- ----------------------------------------------------------------------- -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caisse</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style type="text/css">
+        .container {
+            background-color: rgba(162, 191, 230, 0.507);
+            border-radius: 20px;
+        }
+        
+        .row {
+            background-color: rgba(162, 191, 230, 0.507);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center align-items-center border">
+        <div style="border-radius: 20px" class="row  m-4 border p-3 text-light bg-primary">
+            <h3>Caisse</h3>
+        </div>
+        <div class="row  m-4">
+            <div class="col-3"></div>
+            <div class="col-3  mt-S text-center">
+                <div class="mb-6">
+                    <label for="totalapayer" class="form-label pt-3 ">Total à payer</label>
+                    <input type="number" class="form-control" id="totalapayer" aria-describedby="totalapayer">
+                </div>
+            </div>
+            <div class="col-3  mt-S text-center">
+                <div class="mb-6">
+                    <label for="montantdonne" class="form-label pt-3 ">Montant donné par le client</label>
+                    <input type="number" class="form-control" id="montantdonne" aria-describedby="montantdonne">
+                </div>
+            </div>
+            <div class="col-4 mx-auto sm-3 my-1 ">
+                <button type="submit" id="bouton_calcul" class="btn btn-danger col-12 mt-4">Calcul</button>
+            </div>
+            <div class="col-12  mt-5 ">
+                <label class="col-12"><strong>A RENDRE:</strong></label>
+            </div>
+            <div class="col-4  my-1 mx-auto ">
+                <div id="total_arendre"></div>
+            </div>
+
+
+
+        </div>
+        <!----------------------- Images et résultats ----------------------->
+
+        <div class="row m-4 clearfix bg-white">
+            <div class="col align-self-center py-3 my-4 ">
+                <div class="boxs project_widget">
+                    <div class="pw_img">
+                        <img class="couche img-fluid rounded d-block mx-auto my-3 " src="img/euros_10.png" alt="Billet de 10 euros">
+                    </div>
+                    <div class="pw_content">
+                        <div class="pw_header">
+                            <h4 id="nb_billets_10">nb10</h4>
+                            <small class="text-muted">Billets de 10 €</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center py-3 my-4 ">
+                <div class="boxs project_widget">
+                    <div class="pw_img">
+                        <img class="couche img-fluid rounded d-block mx-auto my-1 p-3" src="img/euros_5.png" alt="Billet de 5 euros" width=97%>
+                    </div>
+                    <div class="pw_content">
+                        <div class="pw_header">
+                            <h4 id="nb_billets_5">nb5</h4>
+                            <small class="text-muted">Billets de 5 €</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center py-3 my-4 ">
+                <div class="boxs project_widget">
+                    <div class="pw_img">
+                        <img class="couche img-fluid rounded d-block mx-auto p-5 " src="img/euros_1.png" alt="Pièce de 1 euros" width=60%>
+                    </div>
+                    <div class="pw_content">
+                        <div class="pw_header">
+                            <h4 id="nb_pieces_1">nb1</h4>
+                            <small class="text-muted">Pièces de 1 €</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
