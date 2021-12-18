@@ -1,5 +1,5 @@
 //const word = 'JAILLISSEMENTS';
-let tablemots = ['détromperaient', 'magnétométries', 'arrérageassiez', 'militarisaient', 'bombarderaient', 'échardonnaient',
+let tablemots = ['detromperaient', 'magnetometries', 'arrerageassiez', 'militarisaient', 'bombarderaient', 'echardonnaient',
     'préopératoires', 'commerceraient', 'déchevillasses', 'impassiblement', 'ébranchassions', 'subrogeassions'
 ];
 
