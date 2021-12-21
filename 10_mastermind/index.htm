@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- -------------------------- JEU DE MASTERMIND -------------------------- -->
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MasterMind</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script>
+        /* Initialisation du jeu à l'ouverture de la page */
+        window.onload = function() {
+            MasterMind.initialise();
+        }
+    </script>
+    <link href="Main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container  text-center border">
+        <div style="border-radius: 20px" class="row  m-4 border p-3 text-light bg-warning">
+            <h3>Mastermind</h3>
+        </div>
+        <div class="row   w-100 m-2">
+            <div class="col-10  mx-auto mt-0 ">
+                Tentez une combinaison en cliquant sur les couleurs, puis "vérifiez"
+            </div>
+        </div>
+        <div class="row  page">
+            <h1>
+            </h1>
+            <div class="col-6 mx-auto  ">
+                <div>
+                    &nbsp;
+                </div>
+                <div class="jeu">
+                    <table>
+                        <tbody id="plateau">
+                            <!-- Emplacement pour le plateau -->
+                        </tbody>
+                    </table>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <table>
+                        <tbody id="couleurselector">
+                            <!-- Emplacement pour le choix de combinaisons -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="options">
+
+                    <div id="result" class="result">
+                        <!-- Emplacement pour le résultat -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="Main.js"></script>
+
+</html>
