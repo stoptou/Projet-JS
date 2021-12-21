@@ -4,10 +4,8 @@ let tablemots = ['detromperaient', 'magnetometries', 'arrerageassiez', 'militari
 ];
 
 let word; //
-//const wordLetters = word;
 let wordLetters;
-//const emptyLetters = new Array(word.length)
-let emptyLetters = new Array(14) // 14 correspond a la longueur des mots
+let emptyLetters = new Array(14)
 let turn = 10;
 let letterAlreadyUsed = [];
 let bouton = document.getElementById('bouton');
@@ -83,7 +81,7 @@ function selectedLetter() {
 
 onload = function() {
     word = tablemots[nbaleatoire(12)]; // tire un mot au hasard dans la liste de 12 mots
-    wordLetters = word.toUpperCase(); // IMPORTANT mettre le mot en majuscule, le code tel qu'il est ne reconnait que des mots en majuscule
+    wordLetters = word.toUpperCase();
     console.log('Mot mystère = ' + wordLetters);
     render();
 }
@@ -92,5 +90,5 @@ onload = function() {
 function nbaleatoire(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
-
+/* ----------------------------------------------------------- */
 bouton.addEventListener('click', selectedLetter, false);

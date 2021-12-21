@@ -7,47 +7,47 @@ let compteurForce;
 let message = document.getElementById("message");
 let bouton = document.getElementById('bouton')
 
-function verifierProposition (){
+function verifierProposition() {
 
     compteurForce = 0;
-    mdpSaisi = document.getElementById('mdp').value ;
+    mdpSaisi = document.getElementById('mdp').value;
 
-    if(regexMaj.test(mdpSaisi)){
+    if (regexMaj.test(mdpSaisi)) {
         compteurForce = compteurForce + 1;
     }
-    if(regexMin.test(mdpSaisi)){
+    if (regexMin.test(mdpSaisi)) {
         compteurForce = compteurForce + 1;
     }
-    if(regexChiffre.test(mdpSaisi)){
+    if (regexChiffre.test(mdpSaisi)) {
         compteurForce = compteurForce + 1;
     }
-    if(regexSpecial.test(mdpSaisi)){
+    if (regexSpecial.test(mdpSaisi)) {
         compteurForce = compteurForce + 1;
     }
-    if(mdpSaisi.length < 8){
+    if (mdpSaisi.length < 8) {
         compteurForce = compteurForce - 1;
     }
 
 
-switch (compteurForce) {
-    case 4:
-        message.innerHTML = '<span class="text-success">Très sécurisé !</span>';
-    break;
-    case 3:
-        message.innerHTML = '<span class="text-success">Sécurisé !</span>';
-    break;
-    case 2:
-        message.innerHTML = '<span class="text-warning">Moyen !!</span>';
-    break;
-    case 1: 
-        message.innerHTML = '<span class="text-danger">Dansgereux !!!</span>';
-    break;
-    case 0:
-        message.innerHTML = '<span class="text-danger">Dansgereux !!!</span>';
-    break;
-    default:
-        message.innerHTML = '';
+    switch (compteurForce) {
+        case 4:
+            message.innerHTML = '<span class="text-success">Très sécurisé !</span>';
+            break;
+        case 3:
+            message.innerHTML = '<span class="text-success">Sécurisé !</span>';
+            break;
+        case 2:
+            message.innerHTML = '<span class="text-warning">Moyen !!</span>';
+            break;
+        case 1:
+            message.innerHTML = '<span class="text-danger">Dansgereux !!!</span>';
+            break;
+        case 0:
+            message.innerHTML = '<span class="text-danger">Dansgereux !!!</span>';
+            break;
+        default:
+            message.innerHTML = '';
+    }
+
 }
-
-
-document.getElementById('mdp').addEventListener('keyup', verifierProposition(), false);}
+document.getElementById('mdp').addEventListener('keyup', verifierProposition, false);
