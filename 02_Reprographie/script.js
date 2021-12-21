@@ -23,7 +23,7 @@ function fc_calcul() {
 // Parfois on se retrouve avec de très nombreuses décimales (ex: 2.34999999999 au lieu de  2.35)
 // cette fonction résoud le problème
 function strip(number) {
-    return (parseFloat(number).toPrecision(6));
+    return (parseFloat(number).toFixed(2));
 }
 /* ---------------------------------- Appel --------------------------------- */
 Boutoncalc.addEventListener("click", fc_calcul, false);
